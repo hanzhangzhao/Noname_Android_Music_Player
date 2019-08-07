@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".Activities.LoginActivity">
+
+    <include layout="@layout/nav_bar"></include>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="22dp"
+        android:src="@mipmap/welcome" />
+
+    <com.example.tryandroidmusicplayer.views.InputView
+        android:id="@+id/input_phone"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        android:layout_marginTop="@dimen/marginSize"
+        app:input_icon="@mipmap/phone"
+        app:input_hint="Please enter your phone number"
+        app:is_password="false"></com.example.tryandroidmusicplayer.views.InputView>
+
+    <View
+        style="@style/line" />
+
+    <com.example.tryandroidmusicplayer.views.InputView
+        android:id="@+id/input_password"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="Please enter your password"
+        app:is_password="true"></com.example.tryandroidmusicplayer.views.InputView>
+
+    <View
+        style="@style/line" />
+
+    <com.example.tryandroidmusicplayer.views.InputView
+        android:id="@+id/input_password_confirm"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/inputViewHeight"
+        app:input_icon="@mipmap/password"
+        app:input_hint="Please confirm your password"
+        app:is_password="true"></com.example.tryandroidmusicplayer.views.InputView>
+
+    <View
+        style="@style/line" />
+
+
+
+    <Button
+        style="@style/loginBtn"
+        android:text="Register"
+        android:layout_marginTop="@dimen/marginSize"
+        android:onClick="onRegisterClick"/>
+
+</LinearLayout>
