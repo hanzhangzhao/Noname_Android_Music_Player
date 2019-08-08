@@ -17,4 +17,7 @@
 
     <dimen name="albumMarginSize">4dp</dimen>
     <dimen name="playedNumImgSize">18dp</dimen>
+
+    <dimen name="imgItemSize">56dp</dimen>
+    <dimen name="imgPlayIconSize">36dp</dimen>
 </resources>

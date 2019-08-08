@@ -1,13 +1,17 @@
 package com.example.tryandroidmusicplayer.adapters;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.bumptech.glide.Glide;
+import com.example.tryandroidmusicplayer.Activities.AlbumListActivity;
 import com.example.tryandroidmusicplayer.R;
 
 public class MusicGridAdapter extends RecyclerView.Adapter<MusicGridAdapter.ViewHolder> {
@@ -25,8 +29,19 @@ public class MusicGridAdapter extends RecyclerView.Adapter<MusicGridAdapter.View
     }
 
     @Override
-    public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
+    public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
 
+        Glide.with(myContext)
+                .load("http://res.lgdsunday.club/poster-1.png")
+                .into(viewHolder.IVIcon);
+
+        viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(myContext, AlbumListActivity.class);
+                myContext.startActivity(intent);
+            }
+        });
     }
 
     @Override
@@ -36,8 +51,14 @@ public class MusicGridAdapter extends RecyclerView.Adapter<MusicGridAdapter.View
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
+        ImageView IVIcon;
+        View itemView;
+
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+
+            this.itemView = itemView;
+            IVIcon = itemView.findViewById(R.id.iv_icon);
         }
     }
 }
