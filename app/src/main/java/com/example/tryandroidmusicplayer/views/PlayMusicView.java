@@ -5,6 +5,8 @@ import android.os.Build;
 import android.util.AttributeSet;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.FrameLayout;
 import android.widget.ImageView;
 
@@ -18,7 +20,11 @@ public class PlayMusicView extends FrameLayout {
 
     private Context myContext;
     private View myView;
-    private ImageView myIVIcon;
+    private FrameLayout myFlPlayMusic;
+    private ImageView myIVIcon, myIVArm, myIVPlay;
+
+    private Animation myPlayMusicAnim, myPlayArmAnim, myStopArmAnim;
+
 
     public PlayMusicView(Context context) {
         super(context);
@@ -43,9 +49,42 @@ public class PlayMusicView extends FrameLayout {
 
         myView = LayoutInflater.from(myContext).inflate(R.layout.play_music, this, false);
 
+        myFlPlayMusic = myView.findViewById(R.id.fl_play_music);
         myIVIcon = myView.findViewById(R.id.circle_iv_icon);
+        myIVArm = myView.findViewById(R.id.iv_arm);
+        myIVPlay = myView.findViewById(R.id.iv_play);
+
+        /**
+         * I. 1. Disc rotate animation
+         *    2. tone arm pointing to disc
+         *    3. tone arm left disc
+         * II. startAnimation
+         */
+        myPlayMusicAnim = AnimationUtils.loadAnimation(myContext, R.anim.play_music_ani);
+        myPlayArmAnim = AnimationUtils.loadAnimation(myContext, R.anim.play_arm_anim);
+        myStopArmAnim = AnimationUtils.loadAnimation(myContext, R.anim.stop_arm_anim);
+        myIVPlay = myView.findViewById(R.id.iv_play);
 
         addView(myView);
+    }
+
+    /**
+     * Start playing music
+     */
+    public void playMusic() {
+        myIVPlay.setVisibility(View.GONE);
+        myFlPlayMusic.startAnimation(myPlayMusicAnim);
+        myIVArm.startAnimation(myPlayArmAnim);
+    }
+
+    /**
+     * Stop playing music
+     */
+    public void StopMusic() {
+        myIVPlay.setVisibility(View.VISIBLE);
+        myFlPlayMusic.clearAnimation();
+        myIVArm.startAnimation(myStopArmAnim);
+
     }
 
     /**

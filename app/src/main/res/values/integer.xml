@@ -2,4 +2,7 @@
 <resources>
 
     <integer name="anim_duration">400</integer>
+    <integer name="play_music_anim_duration">10000</integer>
+    <integer name="play_arm_anim_duration">6000</integer>
+
 </resources>

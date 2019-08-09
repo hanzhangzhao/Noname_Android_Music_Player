@@ -7,6 +7,7 @@
 
     <!--Disc-->
     <FrameLayout
+        android:id="@+id/fl_play_music"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/discTopSize">
@@ -26,6 +27,7 @@
             app:civ_border_color="@android:color/black"/>
 
         <ImageView
+            android:id="@+id/iv_play"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@mipmap/play_music"
@@ -36,9 +38,10 @@
 
     <!--tone arm-->
     <ImageView
+        android:id="@+id/iv_arm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-
+        android:src="@mipmap/needle"
         android:layout_gravity="center_horizontal"
         android:layout_marginLeft="25dp"/>
 
