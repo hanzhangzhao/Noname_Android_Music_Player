@@ -10,9 +10,14 @@
     <ImageView
         android:id="@+id/iv_bg"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="match_parent"
         android:scaleType="centerCrop"
-        />
+        android:src="@mipmap/tchaikovsky"/>
+    
+    <com.example.tryandroidmusicplayer.views.PlayMusicView
+        android:id="@+id/play_music_view"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"></com.example.tryandroidmusicplayer.views.PlayMusicView>
 
     <ImageView
         android:layout_width="wrap_content"

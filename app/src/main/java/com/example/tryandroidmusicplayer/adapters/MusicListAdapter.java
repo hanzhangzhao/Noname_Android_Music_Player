@@ -38,9 +38,9 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
         setRecyclerViewHeight();
 
-//        Glide.with(myContext)
-//                .load("https://simple.wikipedia.org/wiki/Picture#/media/File:Pictor_A_composite.jpg")
-//                .into(viewHolder.IVIcon);
+        Glide.with(myContext)
+                .load("https://www.famousbirthdays.com/faces/bach-johann-image.jpg")
+                .into(viewHolder.IVIcon);
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
