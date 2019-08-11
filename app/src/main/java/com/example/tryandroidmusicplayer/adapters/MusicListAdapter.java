@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -14,6 +15,9 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.tryandroidmusicplayer.Activities.PlayMusicActivity;
 import com.example.tryandroidmusicplayer.R;
+import com.example.tryandroidmusicplayer.models.MusicModel;
+
+import java.util.List;
 
 public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.ViewHolder> {
 
@@ -22,9 +26,12 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
     private RecyclerView myRV;
     private boolean isCalculateRVHeight;
 
-    public MusicListAdapter (Context context, RecyclerView recyclerView){
+    private List<MusicModel> myDataSource;
+
+    public MusicListAdapter (Context context, RecyclerView recyclerView, List<MusicModel> dataSource){
         myContext = context;
         myRV = recyclerView;
+        this.myDataSource = dataSource;
     }
 
     @NonNull
@@ -38,14 +45,20 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
         setRecyclerViewHeight();
 
+        final MusicModel musicModel = myDataSource.get(position);
+
         Glide.with(myContext)
-                .load("https://www.famousbirthdays.com/faces/bach-johann-image.jpg")
+                .load(musicModel.getPoster())
                 .into(viewHolder.IVIcon);
+
+        viewHolder.myTVName.setText(musicModel.getName());
+        viewHolder.myTVAuthor.setText(musicModel.getAuthor());
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(myContext, PlayMusicActivity.class);
+                intent.putExtra(PlayMusicActivity.MUSIC_ID, musicModel.getMusicId());
                 myContext.startActivity(intent);
             }
         });
@@ -53,7 +66,7 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
 
     @Override
     public int getItemCount() {
-        return 8;
+        return myDataSource.size();
     }
 
     /**
@@ -82,12 +95,16 @@ public class MusicListAdapter extends RecyclerView.Adapter<MusicListAdapter.View
 
         ImageView IVIcon;
         View itemView;
+        TextView myTVName, myTVAuthor;
+
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             this.itemView = itemView;
             IVIcon = itemView.findViewById(R.id.iv_icon);
+            myTVName = itemView.findViewById(R.id.tv_name);
+            myTVAuthor = itemView.findViewById(R.id.tv_author);
         }
     }
 }

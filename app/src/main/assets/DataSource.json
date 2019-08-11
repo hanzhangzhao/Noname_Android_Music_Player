@@ -1,0 +1,446 @@
+{
+  "album": [
+    {
+      "albumId": "1",
+      "name": "Eroica",
+      "poster": "http://34.67.137.12/bach.jpg",
+      "playNum": "20.3m",
+      "list": [
+        {
+          "musicId": "101",
+          "name": "Partita No. 6 in E Minor",
+          "poster": "http://34.67.137.12/bach.jpg",
+          "path": "http://34.67.137.12/1.m4a",
+          "author": "Johann Sebastian Bach"
+        },
+        {
+          "musicId": "102",
+          "name": "Suite in A minor",
+          "poster": "http://34.67.137.12/bach2.jpg",
+          "path": "http://34.67.137.12/2.m4a",
+          "author": "Johann Sebastian Bach"
+        },
+        {
+          "musicId": "103",
+          "name": "Symphony No. 9",
+          "poster": "http://34.67.137.12/beethoven.jpg",
+          "path": "http://34.67.137.12/beethoven2.mp3",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "104",
+          "name": "Violin Concerto, 2 Romances",
+          "poster": "http://34.67.137.12/beethoven2.jpg",
+          "path": "http://34.67.137.12/4.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "105",
+          "name": "Quartet No. 2 in A minor",
+          "poster": "http://34.67.137.12/brahms.jpg",
+          "path": "http://34.67.137.12/5.m4a",
+          "author": "Johannes Brahms"
+        },
+        {
+          "musicId": "106",
+          "name": "Orchestra in d minor",
+          "poster": "http://34.67.137.12/schubert.jpg",
+          "path": "http://34.67.137.12/6.m4a",
+          "author": "Johann Sebastian Bach"
+        },
+        {
+          "musicId": "107",
+          "name": "No. 4 in E minor",
+          "poster": "http://34.67.137.12/chopin.jpg",
+          "path": "http://34.67.137.12/7.m4a",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "108",
+          "name": "Nocturne in C Minor",
+          "poster": "http://34.67.137.12/chopin2.jpg",
+          "path": "http://34.67.137.12/8.m4a",
+          "author": "Frédéric Chopin"
+        }
+      ]
+    },
+    {
+      "albumId": "2",
+      "name": "The Fate",
+      "poster": "http://34.67.137.12/mozart.jpg",
+      "playNum": "38.5m",
+      "list": [
+        {
+          "musicId": "201",
+          "name": "No. 4 in E minor",
+          "poster": "http://34.67.137.12/mozart.jpg",
+          "path": "http://34.67.137.12/7.m4a",
+          "author": "Johannes Brahms"
+        },
+        {
+          "musicId": "202",
+          "name": "Partita No. 6 in E Minor",
+          "poster": "http://34.67.137.12/beethoven2.jpg",
+          "path": "http://34.67.137.12/8.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "203",
+          "name": "Symphony No. 9",
+          "poster": "http://34.67.137.12/vivaldi.jpg",
+          "path": "http://34.67.137.12/4.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "204",
+          "name": "Nocturne in C Minor",
+          "poster": "http://34.67.137.12/brahms.jpg",
+          "path": "http://34.67.137.12/1.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "205",
+          "name": "Piano Sonata in B major",
+          "poster": "http://34.67.137.12/chopin2.jpg",
+          "path": "http://34.67.137.12/2.m4a",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "206",
+          "name": "Symphony No.78 in C minor",
+          "poster": "http://34.67.137.12/liszt.jpg",
+          "path": "http://34.67.137.12/beethoven2.mp3",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "207",
+          "name": "Violin Concerto in D major",
+          "poster": "http://34.67.137.12/bach.jpg",
+          "path": "http://34.67.137.12/9.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "208",
+          "name": "Concerto Violin in g minor",
+          "poster": "http://34.67.137.12/haydn.jpg",
+          "path": "http://34.67.137.12/14.m4a",
+          "author": "Antonio Vivaldi"
+        }
+      ]
+    },
+    {
+      "albumId": "3",
+      "name": "Pastoral",
+      "poster": "http://34.67.137.12/beethoven.jpg",
+      "playNum": "21.9m",
+      "list": [
+        {
+          "musicId": "301",
+          "name": "No. 4 in E minor",
+          "poster": "http://34.67.137.12/mozart.jpg",
+          "path": "http://34.67.137.12/7.m4a",
+          "author": "Joseph Haydn"
+        },
+        {
+          "musicId": "302",
+          "name": "Partita No. 6 in E Minor",
+          "poster": "http://34.67.137.12/beethoven2.jpg",
+          "path": "http://34.67.137.12/8.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "303",
+          "name": "Symphony No. 9",
+          "poster": "http://34.67.137.12/vivaldi.jpg",
+          "path": "http://34.67.137.12/4.m4a",
+          "author": "Johann Sebastian Bach"
+        },
+        {
+          "musicId": "304",
+          "name": "Nocturne in C Minor",
+          "poster": "http://34.67.137.12/brahms.jpg",
+          "path": "http://34.67.137.12/1.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "305",
+          "name": "Piano Sonata in B major",
+          "poster": "http://34.67.137.12/chopin2.jpg",
+          "path": "http://34.67.137.12/2.m4a",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "306",
+          "name": "Symphony No.78 in C minor",
+          "poster": "http://34.67.137.12/liszt.jpg",
+          "path": "http://34.67.137.12/beethoven2.mp3",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "307",
+          "name": "Violin Concerto in D major",
+          "poster": "http://34.67.137.12/bach.jpg",
+          "path": "http://34.67.137.12/9.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "308",
+          "name": "Concerto Violin in g minor",
+          "poster": "http://34.67.137.12/haydn.jpg",
+          "path": "http://34.67.137.12/14.m4a",
+          "author": "Antonio Vivaldi"
+        }
+      ]
+    },
+    {
+      "albumId": "4",
+      "name": "Apotheosis of Dance",
+      "poster": "http://34.67.137.12/chopin.jpg",
+      "playNum": "12.7m",
+      "list": [
+        {
+          "musicId": "401",
+          "name": "No. 4 in E minor",
+          "poster": "http://34.67.137.12/mozart.jpg",
+          "path": "http://34.67.137.12/7.m4a",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "402",
+          "name": "Partita No. 6 in E Minor",
+          "poster": "http://34.67.137.12/beethoven2.jpg",
+          "path": "http://34.67.137.12/8.m4a",
+          "author": "Johannes Brahms"
+        },
+        {
+          "musicId": "403",
+          "name": "Symphony No. 9",
+          "poster": "http://34.67.137.12/vivaldi.jpg",
+          "path": "http://34.67.137.12/4.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "404",
+          "name": "Nocturne in C Minor",
+          "poster": "http://34.67.137.12/brahms.jpg",
+          "path": "http://34.67.137.12/1.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "405",
+          "name": "Piano Sonata in B major",
+          "poster": "http://34.67.137.12/schubert.jpg",
+          "path": "http://34.67.137.12/2.m4a",
+          "author": "Franz Schubert"
+        },
+        {
+          "musicId": "406",
+          "name": "Symphony No.78 in C minor",
+          "poster": "http://34.67.137.12/liszt.jpg",
+          "path": "http://34.67.137.12/beethoven2.mp3",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "407",
+          "name": "Violin Concerto in D major",
+          "poster": "http://34.67.137.12/bach.jpg",
+          "path": "http://34.67.137.12/9.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "408",
+          "name": "Concerto Violin in g minor",
+          "poster": "http://34.67.137.12/haydn.jpg",
+          "path": "http://34.67.137.12/14.m4a",
+          "author": "Antonio Vivaldi"
+        }
+      ]
+    },
+    {
+      "albumId": "5",
+      "name": "The Little Symphony",
+      "poster": "http://34.67.137.12/tchaikovsky.jpg",
+      "playNum": "8.6m",
+      "list": [
+        {
+          "musicId": "501",
+          "name": "No. 4 in E minor",
+          "poster": "http://34.67.137.12/mozart.jpg",
+          "path": "http://34.67.137.12/7.m4a",
+          "author": "Joseph Haydn"
+        },
+        {
+          "musicId": "502",
+          "name": "Partita No. 6 in E Minor",
+          "poster": "http://34.67.137.12/beethoven2.jpg",
+          "path": "http://34.67.137.12/8.m4a",
+          "author": "Johann Sebastian Bach"
+        },
+        {
+          "musicId": "503",
+          "name": "Symphony No. 9",
+          "poster": "http://34.67.137.12/vivaldi.jpg",
+          "path": "http://34.67.137.12/4.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "504",
+          "name": "Nocturne in C Minor",
+          "poster": "http://34.67.137.12/brahms.jpg",
+          "path": "http://34.67.137.12/1.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "505",
+          "name": "Piano Sonata in B major",
+          "poster": "http://34.67.137.12/chopin2.jpg",
+          "path": "http://34.67.137.12/2.m4a",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "506",
+          "name": "Symphony No.78 in C minor",
+          "poster": "http://34.67.137.12/schubert.jpg",
+          "path": "http://34.67.137.12/beethoven2.mp3",
+          "author": "Franz Schubert"
+        },
+        {
+          "musicId": "507",
+          "name": "Violin Concerto in D major",
+          "poster": "http://34.67.137.12/bach.jpg",
+          "path": "http://34.67.137.12/9.m4a",
+          "author": "Johannes Brahms"
+        },
+        {
+          "musicId": "508",
+          "name": "Concerto Violin in g minor",
+          "poster": "http://34.67.137.12/haydn.jpg",
+          "path": "http://34.67.137.12/14.m4a",
+          "author": "Antonio Vivaldi"
+        }
+      ]
+    },
+    {
+      "albumId": "6",
+      "name": "The Choral",
+      "poster": "http://34.67.137.12/haydn.jpg",
+      "playNum": "567.8k",
+      "list": [
+        {
+          "musicId": "601",
+          "name": "No. 4 in E minor",
+          "poster": "http://34.67.137.12/mozart.jpg",
+          "path": "http://34.67.137.12/7.m4a",
+          "author": "Joseph Haydn"
+        },
+        {
+          "musicId": "602",
+          "name": "Partita No. 6 in E Minor",
+          "poster": "http://34.67.137.12/beethoven2.jpg",
+          "path": "http://34.67.137.12/8.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "603",
+          "name": "Symphony No. 9",
+          "poster": "http://34.67.137.12/vivaldi.jpg",
+          "path": "http://34.67.137.12/4.m4a",
+          "author": "Ludwig van Beethoven"
+        },
+        {
+          "musicId": "604",
+          "name": "Nocturne in C Minor",
+          "poster": "http://34.67.137.12/brahms.jpg",
+          "path": "http://34.67.137.12/1.m4a",
+          "author": "Pyotr Ilyich Tchaikovsky"
+        },
+        {
+          "musicId": "605",
+          "name": "Piano Sonata in B major",
+          "poster": "http://34.67.137.12/schubert.jpg",
+          "path": "http://34.67.137.12/2.m4a",
+          "author": "Franz Schubert"
+        },
+        {
+          "musicId": "606",
+          "name": "Symphony No.78 in C minor",
+          "poster": "http://34.67.137.12/liszt.jpg",
+          "path": "http://34.67.137.12/beethoven2.mp3",
+          "author": "Frédéric Chopin"
+        },
+        {
+          "musicId": "607",
+          "name": "Violin Concerto in D major",
+          "poster": "http://34.67.137.12/bach.jpg",
+          "path": "http://34.67.137.12/6.m4a",
+          "author": "Johannes Brahms"
+        },
+        {
+          "musicId": "608",
+          "name": "Concerto Violin in g minor",
+          "poster": "http://34.67.137.12/haydn.jpg",
+          "path": "http://34.67.137.12/14.m4a",
+          "author": "Antonio Vivaldi"
+        }
+      ]
+    }
+  ],
+  "hot": [
+    {
+      "musicId": "7",
+      "name": "Piano Concerto No. 5",
+      "poster": "http://34.67.137.12/beethoven2.jpg",
+      "path": "http://34.67.137.12/beethoven.mp3",
+      "author": "Ludwig van Beethoven"
+    },
+    {
+      "musicId": "8",
+      "name": "Symphony No.40 in G minor",
+      "poster": "http://34.67.137.12/schubert.jpg",
+      "path": "http://34.67.137.12/mozart.mp3",
+      "author": "Wolfgang Amadeus Mozart"
+    },
+    {
+      "musicId": "9",
+      "name": "Symphony No. 9",
+      "poster": "http://34.67.137.12/dvorak.jpg",
+      "path": "http://34.67.137.12/dvorak.mp3",
+      "author": "Antonín Dvořák"
+    },
+    {
+      "musicId": "10",
+      "name": "Piano Sonata in B major",
+      "poster": "http://34.67.137.12/liszt.jpg",
+      "path": "http://34.67.137.12/10.m4a",
+      "author": "Franz Liszt"
+    },
+    {
+      "musicId": "11",
+      "name": "Violin Concerto in D major",
+      "poster": "http://34.67.137.12/tchaikovsky.jpg",
+      "path": "http://34.67.137.12/11.m4a",
+      "author": "Pyotr Ilyich Tchaikovsky"
+    },
+    {
+      "musicId": "12",
+      "name": "Concerto Violin in g minor",
+      "poster": "http://34.67.137.12/vivaldi.jpg",
+      "path": "http://34.67.137.12/12.m4a",
+      "author": "Antonio Vivaldi"
+    },
+    {
+      "musicId": "13",
+      "name": "Symphony No.78 in C minor",
+      "poster": "http://34.67.137.12/haydn.jpg",
+      "path": "http://34.67.137.12/13.m4a",
+      "author": "Joseph Haydn"
+    },
+    {
+      "musicId": "14",
+      "name": "Horn Concerto No.1 in D maj",
+      "poster": "http://34.67.137.12/schubert.jpg",
+      "path": "http://34.67.137.12/14.m4a",
+      "author": "Franz Schubert"
+    }
+  ]
+}

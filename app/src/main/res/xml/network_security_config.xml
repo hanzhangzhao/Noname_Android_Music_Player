@@ -1,8 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <network-security-config>
     <domain-config cleartextTrafficPermitted="true">
-        <domain includeSubdomains="true">res.lgdsunday.club</domain>
+        <domain includeSubdomains="true">res.lgdsunday.club</domain>beethoven
         <domain includeSubdomains="true">resources.wimpmusic.com</domain>
         <domain includeSubdomains="true">www.famousbirthdays.com</domain>
+        <domain includeSubdomains="true">www.dropbox.com</domain>
+        <domain includeSubdomains="true">34.67.137.12</domain>
     </domain-config>
 </network-security-config>

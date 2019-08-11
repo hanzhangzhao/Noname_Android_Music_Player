@@ -5,11 +5,15 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import com.example.tryandroidmusicplayer.R;
+import com.example.tryandroidmusicplayer.helps.UserHelp;
 import com.example.tryandroidmusicplayer.utils.UserUtils;
 
 public class MeActivity extends BaseActivity {
+
+    private TextView myUsername;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -21,6 +25,9 @@ public class MeActivity extends BaseActivity {
 
     private void initView(){
         initNavbar(true, "My Account",false);
+
+        myUsername = findId(R.id.username);
+        myUsername.setText("Username: "+ UserHelp.getInstance().getPhone());
     }
 
     /**

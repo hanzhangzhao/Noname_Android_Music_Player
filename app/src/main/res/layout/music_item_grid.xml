@@ -29,6 +29,7 @@
                 android:src="@mipmap/play_num" />
 
             <TextView
+                android:id="@+id/tv_play_num"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="@dimen/albumMarginSize"
@@ -42,12 +43,14 @@
     </FrameLayout>
 
     <TextView
+        android:id="@+id/tv_list_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:padding="@dimen/albumMarginSize"
         android:text="playlist name"
         android:textColor="@color/titleColor"
         android:textSize="@dimen/titleSize"
-        android:textStyle="bold" />
+        android:textStyle="bold"
+        android:gravity="center_horizontal"/>
 
 </LinearLayout>

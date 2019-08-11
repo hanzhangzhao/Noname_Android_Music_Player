@@ -6,6 +6,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -13,13 +14,19 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.bumptech.glide.Glide;
 import com.example.tryandroidmusicplayer.Activities.AlbumListActivity;
 import com.example.tryandroidmusicplayer.R;
+import com.example.tryandroidmusicplayer.models.AlbumModel;
+
+import java.util.List;
 
 public class MusicGridAdapter extends RecyclerView.Adapter<MusicGridAdapter.ViewHolder> {
 
     private Context myContext;
 
-    public MusicGridAdapter(Context context) {
+    private List<AlbumModel> myDataSource;
+
+    public MusicGridAdapter(Context context, List<AlbumModel> dataSource) {
         myContext = context;
+        this.myDataSource = dataSource;
     }
 
     @NonNull
@@ -31,14 +38,20 @@ public class MusicGridAdapter extends RecyclerView.Adapter<MusicGridAdapter.View
     @Override
     public void onBindViewHolder(@NonNull ViewHolder viewHolder, int position) {
 
+        final AlbumModel albumModel = myDataSource.get(position);
+
         Glide.with(myContext)
-                .load("http://res.lgdsunday.club/poster-1.png")
+                .load(albumModel.getPoster())
                 .into(viewHolder.IVIcon);
+
+        viewHolder.myTVPlayNum.setText(albumModel.getPlayNum());
+        viewHolder.myTVListName.setText(albumModel.getName());
 
         viewHolder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(myContext, AlbumListActivity.class);
+                intent.putExtra(AlbumListActivity.ALBUM_ID, albumModel.getAlbumId());
                 myContext.startActivity(intent);
             }
         });
@@ -46,19 +59,23 @@ public class MusicGridAdapter extends RecyclerView.Adapter<MusicGridAdapter.View
 
     @Override
     public int getItemCount() {
-        return 6;
+        return myDataSource.size();
     }
 
     class ViewHolder extends RecyclerView.ViewHolder{
 
         ImageView IVIcon;
         View itemView;
+        TextView myTVPlayNum, myTVListName;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
 
             this.itemView = itemView;
             IVIcon = itemView.findViewById(R.id.iv_icon);
+
+            myTVPlayNum = itemView.findViewById(R.id.tv_play_num);
+            myTVListName = itemView.findViewById(R.id.tv_list_name);
         }
     }
 }

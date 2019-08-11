@@ -17,7 +17,8 @@
     <com.example.tryandroidmusicplayer.views.PlayMusicView
         android:id="@+id/play_music_view"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"></com.example.tryandroidmusicplayer.views.PlayMusicView>
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"></com.example.tryandroidmusicplayer.views.PlayMusicView>
 
     <ImageView
         android:layout_width="wrap_content"
@@ -34,6 +35,7 @@
         android:layout_marginTop="480dp">
 
         <TextView
+            android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Song name"
@@ -42,6 +44,7 @@
             android:textSize="@dimen/titleSize"/>
 
         <TextView
+            android:id="@+id/tv_author"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Author"

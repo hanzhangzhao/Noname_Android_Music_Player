@@ -10,6 +10,8 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.tryandroidmusicplayer.R;
 import com.example.tryandroidmusicplayer.adapters.MusicGridAdapter;
 import com.example.tryandroidmusicplayer.adapters.MusicListAdapter;
+import com.example.tryandroidmusicplayer.helps.RealmHelp;
+import com.example.tryandroidmusicplayer.models.MusicSourceModel;
 import com.example.tryandroidmusicplayer.views.GridItemSpaceDecoration;
 
 public class MainActivity extends BaseActivity {
@@ -18,12 +20,22 @@ public class MainActivity extends BaseActivity {
     private MusicGridAdapter myGridAdapter;
     private MusicListAdapter myListAdapter;
 
+    private RealmHelp myRealmHelp;
+    private MusicSourceModel myMusicSourceModel;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        initData();
         initView();
+    }
+
+    private  void initData(){
+        myRealmHelp = new RealmHelp();
+        myMusicSourceModel = myRealmHelp.getMusicSource();
+
     }
 
     private void initView(){
@@ -34,7 +46,7 @@ public class MainActivity extends BaseActivity {
         myRVGrid.addItemDecoration(new GridItemSpaceDecoration(getResources().getDimensionPixelSize(R.dimen.albumMarginSize),myRVGrid));
 
         myRVGrid.setNestedScrollingEnabled(false);
-        myGridAdapter = new MusicGridAdapter(this);
+        myGridAdapter = new MusicGridAdapter(this, myMusicSourceModel.getAlbum());
         myRVGrid.setAdapter(myGridAdapter);
 
         /**
@@ -48,7 +60,13 @@ public class MainActivity extends BaseActivity {
         myRVList.addItemDecoration(new DividerItemDecoration(this,DividerItemDecoration.VERTICAL));
 //        avoid separate scroll bar for recyclerView lists
         myRVList.setNestedScrollingEnabled(false);
-        myListAdapter = new MusicListAdapter(this, myRVList);
+        myListAdapter = new MusicListAdapter(this, myRVList,myMusicSourceModel.getHot());
         myRVList.setAdapter(myListAdapter);
+    }
+
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        myRealmHelp.close();
     }
 }
